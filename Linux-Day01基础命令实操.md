@@ -46,11 +46,11 @@ mkdir ==-p== ~/day01_test01/demo/test
 
 cd ~/day01_test01
 ![[Pasted image 20260802223220.png]]
-### 3. 创建空白测试文件
+### 3. touch创建空白测试文件
 
 touch day01_file01.txt day01_file02.txt
 ![[Pasted image 20260802223316.png]]
-![[Pasted image 20260802223536.png]]4. 复制文件
+![[Pasted image 20260802223536.png]]4. cp复制文件
 
 cp day01_file01.txt day01_file01_bak01.txt
 ![[Pasted image 20260802223653.png]]
@@ -58,11 +58,11 @@ cp day01_file01.txt day01_file01_bak01.txt
 
 cp -r demo demo_bak01
 ![[Pasted image 20260802223820.png]]
-### 5. 移动 / 重命名
+### 5. mv移动 / 重命名
 
 mv day01_file02.txt day01_file02_rename.txt
 ![[Pasted image 20260802224004.png]]
-### 6. 删除文件（谨慎使用！）
+### 6. rm删除文件（谨慎使用！）
 
 rm day01_file02_rename.txt
 ![[Pasted image 20260802224056.png]]
