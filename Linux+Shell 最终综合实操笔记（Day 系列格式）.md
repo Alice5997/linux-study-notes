@@ -1,4 +1,4 @@
-# Linux+Shell 最终综合实操笔记（8.4–8.14 红框整合 · Day 系列格式）
+# Linux+Shell 最终综合实操笔记（Day 系列格式）
 
 ## 基础信息
 
@@ -1342,6 +1342,13 @@ git push -u origin main
 ```
 
 【此处放置截图：push 成功输出】
+![[Pasted image 20260922001500.png]]
+git add 脚本文件/gov_log_auto.sh
+git commit -m "添加政务日志自动化处理完整脚本gov_log_auto.sh"
+git push origin main
+git status
+![[Pasted image 20260922002412.png]]
+
 
 ---
 
@@ -1370,6 +1377,8 @@ systemctl is-active sshd
 
 【此处放置截图：服务启动失败排查全过程】
 
+![[Pasted image 20260922002936.png]]
+![[Pasted image 20260922003005.png]]
 ### 故障模拟二：定时任务失效（独立排查）
 
 场景：crontab 任务到点未执行。
@@ -1390,14 +1399,15 @@ crontab -e
 ```
 
 【此处放置截图：定时任务失效排查全过程】
-
+![[Pasted image 20260922003840.png]]
+![[Pasted image 20260922003925.png]]
 ### 本模块避坑
 
-> 1. 服务启动失败优先看 `journalctl -u 服务名`，比 status 信息更全。
-> 2. 定时任务失效排查顺序：`crontab -l` → `/var/log/cron` → 手动执行脚本。
-> 3. 全量复盘建议对照分集清单自查：每个模块能否不看笔记独立复现命令。
+> 1==. 服务启动失败优先看 `journalctl -u 服务名`，比 status 信息更全。==
+> ==2. 定时任务失效排查顺序：`crontab -l` → `/var/log/cron` → 手动执行脚本。==
+> 1. 全量复盘建议对照分集清单自查：每个模块能否不看笔记独立复现命令。
 
-### 本模块最终产出：故障处理完整文档 + 投递记录
+### 本模块最终产出：故障处理完整文档 
 
 在 Windows 本地 Obsidian 知识库 `01_Linux学习` 目录新建 `06_故障处理完整文档.md`：
 
