@@ -1328,8 +1328,9 @@ crontab -l
 ```
 
 【此处放置截图：gov_log_auto.sh 运行输出与报告内容】
+![[Pasted image 20260922000921.png]]
 【此处放置截图：crontab -l 显示每日任务】
-
+![[Pasted image 20260922000937.png]]
 ### 本模块最终产出：完整自动化脚本上传 GitHub
 
 ```
