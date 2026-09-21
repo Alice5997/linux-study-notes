@@ -1,0 +1,9 @@
+# Obsidian 缓存文件
+.obsidian/
+
+# Windows系统文件
+Thumbs.db
+
+# 临时文件
+*.tmp
+*.log
