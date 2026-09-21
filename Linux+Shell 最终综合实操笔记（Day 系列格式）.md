@@ -852,7 +852,8 @@ git push -u origin main
 ```
 
 【此处放置截图：git commit 与 git push 成功输出】
-
+虚拟机上上传不成功，直接在本地登录github网页通过拖拽方式上传文件
+![[Pasted image 20260920212701.png]]
 
 ---
 
@@ -887,7 +888,7 @@ done
 ```
 
 【此处放置截图：for 循环三种方式输出】
-
+![[Pasted image 20260920231017.png]]
 #### 2. while 循环
 
 ```
@@ -904,6 +905,8 @@ done < ~/shell_test/logs/app.log
 ```
 
 【此处放置截图：while 循环与逐行读文件输出】
+![[Pasted image 20260920231713.png]]
+![[Pasted image 20260920231742.png]]
 
 #### 3. read 读取输入
 
@@ -917,7 +920,7 @@ echo "姓名:$name 年龄:$age"
 ```
 
 【此处放置截图：read 交互输入输出】
-
+![[Pasted image 20260920232140.png]]
 #### 4. basename / dirname
 
 ```
@@ -928,6 +931,7 @@ dirname /home/study/shell_test/scripts/filter_gov_log.sh
 ```
 
 【此处放置截图：basename/dirname 输出】
+![[Pasted image 20260920232543.png]]
 
 ### 本模块避坑
 
@@ -994,6 +998,8 @@ cat ~/shell_test/logs/batch_report.txt
 ```
 
 【此处放置截图：批量处理报告输出】
+![[Pasted image 20260920235718.png]]
+![[Pasted image 20260920235740.png]]
 
 GitHub 上传：
 
@@ -1006,7 +1012,7 @@ git push -u origin main
 ```
 
 【此处放置截图：push 成功输出】
-
+![[Pasted image 20260921000424.png]]
 ---
 
 ## 模块 8 Shell 函数、传参实操 + 脚本运行报错独立排障（对应 Shell 专项 21–26 集）
@@ -1066,7 +1072,7 @@ chmod +x func_demo.sh
 ```
 
 【此处放置截图：函数定义调用与局部/全局变量输出】
-
+![[Pasted image 20260921172122.png]]
 #### 2. 文本处理工具（cut/sort/awk/sed）
 
 ```
@@ -1084,7 +1090,8 @@ grep "ERROR" ~/shell_test/logs/app.log | awk '{print $1, $2}' | sort | uniq -c
 ```
 
 【此处放置截图：cut/sort/awk/sed 输出】
-
+![[Pasted image 20260921173311.png]]
+![[Pasted image 20260921173324.png]]
 ### 故障模拟：脚本运行报错独立排障
 
 场景：脚本运行报 `command not found`、`syntax error`、`No such file or directory` 等错误。
@@ -1104,7 +1111,7 @@ bash -x ~/shell_test/scripts/filter_gov_log.sh ~/shell_test/logs/app.log
 ```
 
 【此处放置截图：bash -x 跟踪输出定位错误】
-
+![[Pasted image 20260921173805.png]]
 ### 本模块避坑
 
 > 1. shell 函数 `return` 只能返回 0‑255 之间数字；大于 255 结果会溢出。
@@ -1189,6 +1196,7 @@ ls ~/shell_test/backup/
 ```
 
 【此处放置截图：函数库导入与三个函数调用输出】
+![[Pasted image 20260921181853.png]]
 
 GitHub 上传：
 
